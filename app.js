@@ -21,8 +21,9 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 //Routes
 app.get('/', function(req, res){
+			console.log('bbbbb');
 	res.send('here');
-		console.log('bbbbb');
+
 
 });
 
