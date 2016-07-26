@@ -22,11 +22,13 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 //Routes
 app.get('/', function(req, res){
 	res.send('here');
+		console.log('bbbbb');
+
 });
 
 app.post('/collect', function(req, res){
 	
-	console.log("a");
+	console.log('aaaaa');
 
 	var channel = {
 		id: 	req.body.channel_id,
@@ -101,4 +103,6 @@ app.post('/collect', function(req, res){
 //Start Server
 app.listen(port, function () {
 	console.log('Listening on port ' + port); 
+		console.log('cccccc');
+
 });
