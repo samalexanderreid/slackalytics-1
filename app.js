@@ -25,6 +25,8 @@ app.get('/', function(req, res){
 });
 
 app.post('/collect', function(req, res){
+	
+	console.log("a");
 
 	var channel = {
 		id: 	req.body.channel_id,
